@@ -69,6 +69,10 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk
 
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
+# Expose Irda feature
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/etc/com.sec.feature.irda_service.xml:system/etc/permissions/com.sec.feature.irda_service.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
