@@ -132,6 +132,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     lights.msm8960
 
+# Irda
+PRODUCT_PACKAGES += \
+    irda.msm8960
+
 # Loki
 PRODUCT_PACKAGES += \
     loki_tool \
